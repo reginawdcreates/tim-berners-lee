@@ -3,25 +3,41 @@
 
 <head>
     <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <title>Sir Tim Berners-Lee</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-    <center>
-        <ul class="menu">
-            <li class="links"><a href="#welcome">INÍCIO</a></li>
-            <li class="links"><a href="#videos">VÍDEOS</a></li>
-            <li class="links"><a href="#work">TRABALHOS</a></li>
-            <li class="links"><a href="#writings">ESCRITOS</a></li>
-            <li class="links"><a href="#contact">CONTATO</a></li>
+    <nav class="navbar-inverse myNavbar">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">Perter Parker</a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#BEM-VINDOS">INÍCIO</a></li>
+            <li><a href="#videos">VIDEOS</a></li>
+            <li><a href="#Trabalhos">TRABALHO</a></li>
+            <li><a href="#Escritos">ESCRITOS</a></li>
+            <li><a href="#contato">CONTATO</a></li>
+          </ul>
+        </div>
+    
+</nav>
 
-        </ul>
-
-    </center>
     <section id="welcome">
         <div class="parallax-inner">
             <img src="stbl.jpg" class="profile" />
@@ -53,7 +69,7 @@
 			
 			A Web foi usada pela primeira vez para comércio eletrônico em 1997.</p>
     </section>
-
+<hr>
     <section id="videos">
         <h1>Vídeos</h1>
         <div class="line"></div>
@@ -66,12 +82,15 @@
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
-    <section id="work">
-        <h1>TRABALHOS</h1>
-        <div class="line"></div>
-        <iframe width="900" height="1000" src="https://pt.wikipedia.org/wiki/Tim_Berners-Lee#Vida_e_carreira"
-            frameborder="0"></iframe>
-    </section>
+<hr>
+<section id="work" style="width: 100%;">
+    <h1>TRABALHO</h1>
+    <div class="line"></div>
+    <iframe class="work_iframe" height="1000" src="https://en.wikipedia.org/wiki/Tim_Berners-Lee#Career_and_research" frameborder="0" style="width: 80%; margin: 10px;"></iframe>
+
+</section>
+   
+<hr>
 
    <section id="writings">
         <h1>ESCRITOS</h1>
@@ -82,7 +101,7 @@
         <a href="https://interestingengineering.com/how-did-tim-berners-lee-change-the-world-with-the-world-wide-web"
             target="_blank">Artigo em inglês: How Did Tim Berners-Lee Change the World With the World Wide Web?</a>
     </section>
-    <br>
+    <hr>
     
     <section id="contact">
 
